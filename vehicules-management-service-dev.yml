@@ -1,6 +1,3 @@
-server:
-  port: 8082
-
 spring:
   datasource:
     url: jdbc:h2:mem:vehicules_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
@@ -9,7 +6,7 @@ spring:
     password: password
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none # Désactive la création automatique des tables par Hibernate
     show-sql: true
   h2:
     console:
