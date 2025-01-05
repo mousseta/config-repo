@@ -11,9 +11,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
-# Activer la console H2 pour les tests locaux
-spring:
   h2:
     console:
       enabled: true
